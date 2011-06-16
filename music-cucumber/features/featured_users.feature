@@ -12,25 +12,7 @@ Feature: Users
     When I send a GET request for "/users/featured"
     Then the response status should be "200"
     And the JSON response should have 0 "$.users.*"
-  
-  @pending
-  Scenario: Update featured users
-    When I send a PUT request to "/users/featured" with the following:
-      """
-      {
-          "users": [
-            { "username": "testuser" }
-          ]
-      }
-      """
-    Then the response status should be "200"
-    And the JSON response should have 1 "$.users.*"
-    And the JSON response should have "$.users.featured_position" with the text "0"
-    When I send a GET request for "/users/featured"
-    Then the response status should be "200"
-    And the JSON response should have 1 "$.users.*"
-  
-   
+     
   Scenario: View featured users when there are some featured users
     When I send a GET request for "/users/featured"
     Then the response status should be "200"

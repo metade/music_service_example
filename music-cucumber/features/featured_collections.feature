@@ -11,22 +11,6 @@ Feature: Featured collections
     When I send a GET request for "/collections/featured"
     Then the response status should be "200"
     And the JSON response should have 0 "$.collections.*"
-  
-  Scenario: Update featured collections
-    When I send a PUT request to "/collections/featured" with the following:
-      """
-      {
-          "collections": [
-            { "username": "testuser" }
-          ]
-      }
-      """
-    Then the response status should be "200"
-    And the JSON response should have 1 "$.collections.*"
-    And the JSON response should have "$.collections.featured_position" with the text "0"
-    When I send a GET request for "/collections/featured"
-    Then the response status should be "200"
-    And the JSON response should have 1 "$.collections.*"
     
     Scenario: View featured collections when there are some featured collections
       When I send a GET request for "/collections/featured"
