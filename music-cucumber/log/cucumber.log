@@ -1,0 +1,589 @@
+# Logfile created on 2011-06-14 09:06:18 +0100 by logger.rb/25413
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 296 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 626 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 639 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 404 NotFound | text/html 639 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 789 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 293 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 298 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 2 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 12 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 790 bytes
+RestClient.delete "http://localhost:3000/users/marquiskertzmann", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 299 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes
+RestClient.get "http://localhost:3000/users", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 300 bytes
+RestClient.delete "http://localhost:3000/users/testuser", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Type"=>"application/json"
+# => 200 OK | application/json 0 bytes
+RestClient.post "http://localhost:3000/users", "{\"user\":{\"name\":\"Test User\",\"username\":\"testuser\",\"bbcid\":12345}}", "Accept"=>"application/json", "Accept-Encoding"=>"gzip, deflate", "Content-Length"=>"65", "Content-Type"=>"application/json"
+# => 201 Created | application/json 294 bytes

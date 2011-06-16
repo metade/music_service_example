@@ -1,0 +1,24 @@
+= Integration tests for the BBC Music Guides Service Layer
+
+Based on the following documentation:
+https://confluence.dev.bbc.co.uk/display/PAL/PAL+Cucumber+Testing
+
+== Prerequisites
+
+Run the following commands in your sandbox:
+
+yum install libxml2-devel libxslt-devel git
+yum --enablerepo=bbc-int install jruby
+jruby -S gem install bundler
+
+== Installing
+
+cd music/cucumber
+jruby -S bundle install --path=vendor/bundle --binstubs
+
+== Running the tests
+
+./bin/cucumber
+
+To generate a report in html:
+./bin/cucumber -f html -o report.html

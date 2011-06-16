@@ -1,0 +1,14 @@
+source "http://rubygems.org"
+
+platforms :jruby do
+  gem "jruby-openssl"
+end
+
+gem "jsonpath"
+
+gem "cucumber"
+gem 'rack-test'
+gem "capybara-mechanize", :git => "git://github.com/metade/capybara-mechanize.git"
+gem "rspec", :require => "spec"
+
+gem "rest-client"
