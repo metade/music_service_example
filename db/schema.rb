@@ -10,7 +10,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110615080339) do
+ActiveRecord::Schema.define(:version => 20110616080550) do
+
+  create_table "collections", :force => true do |t|
+    t.string   "url_key"
+    t.string   "title"
+    t.string   "pid"
+    t.string   "short_synopsis"
+    t.string   "medium_synopsis"
+    t.integer  "user_id"
+    t.integer  "featured_position"
+    t.datetime "promoted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "username"

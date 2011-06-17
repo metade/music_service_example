@@ -6,12 +6,12 @@ module Music
   def self.destroy_all_users
     users = Music::User.all.inject({}){ |h,u| h[u.username] ||= u; h }.values
     users.each do |user|
-      # user.collections.each do |collection|
+      user.collections.each do |collection|
       #   collection.clips.each do |clip|
       #     RestClient.delete "#{Music::HOST}/collections/#{collection.to_param}/clips/#{clip.pid}", :content_type => :json, :accept => :json
       #   end
-      #   collection.destroy
-      # end
+        collection.destroy
+      end
       # user.playlists.each do |playlist|
       #   playlist.playlists_tracks.each do |track|
       #     RestClient.delete "#{Music::HOST}/playlists/#{playlist.to_param}/tracks/#{track['id']}", :content_type => :json, :accept => :json

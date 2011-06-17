@@ -7,11 +7,13 @@ Feature: Collections
     Given I send and accept JSON
     And a user exists
   
+  @rails
   Scenario: List collections when there are no collections
     When I send a GET request for "/collections"
     Then the response status should be "200"
     And the JSON response should have 0 "$.collections"
-  
+    
+  @rails  
   Scenario: Create a collection
     When I send a POST request to "/users/testuser/collections" with the following:
       """
@@ -21,12 +23,13 @@ Feature: Collections
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And show me the response
     And the JSON response should have the following:
       | jsonpath                  | value                        |
       | $.collection.title        | Test Collection              |
-	  
+	
+	@rails  
   Scenario: View a collection
     Given a collection exists
     When I send a GET request for "/collections/:url_key"
@@ -35,7 +38,7 @@ Feature: Collections
       | jsonpath                   | value                      |
       | $.collection.title         | Test Collection            |
 
-  @current
+  @rails
   Scenario: Update a collection
     Given a collection exists
     When I send a PUT request to "/collections/:url_key" with the following:
@@ -55,8 +58,9 @@ Feature: Collections
       | $.collection.title           | Fantastic Collections                   |
       | $.collection.short_synopsis  | A fantastic short collections synopsis  |
       | $.collection.medium_synopsis | A fantastic medium collections synopsis |
-      | $.collection.promoted_at     | 2011-05-25T12:31:25+0100                |
-	  
+      # | $.collection.promoted_at     | 2011-05-25T12:31:25+0100Z               |
+	
+	@rails 
   Scenario: Delete a collection
     Given a collection exists
     When I send a DELETE request to "/collections/:url_key"

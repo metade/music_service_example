@@ -2,13 +2,13 @@ class UsersController < ApplicationController
   respond_to :html, :xml, :json
   
   def index
-    @users = User.all
-    respond_with(:users => @users)
+    @users = User.all(:include => :collections)
+    respond_with({ :users => @users }, :include => :collections)
   end
   
   def show
-    @user = User.find_by_username(params[:id])
-    respond_with(:user => @user)
+    @user = User.find_by_username(params[:id], :include => :collections)
+    respond_with({ :user => @user }, :include => :collections)
   end
   
   def create
@@ -20,16 +20,12 @@ class UsersController < ApplicationController
   def update
     @user = User.find_by_username(params[:id])
     @user.update_attributes(params[:user])
-    respond_with(:user => @user) do |format|
-      format.json { render(:json => {:user => @user}.to_json) }
-    end
+    respond_with(:user => @user)
   end
   
   def destroy
     @user = User.find_by_username(params[:id])
     @user.destroy
-    respond_with(:user => @user) do |format|
-      format.json { render(:json => '') }
-    end
+    respond_with(:user => @user)
   end
 end
