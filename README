@@ -1,3 +1,9 @@
+= Building a REST Web Service using Ruby on Rails
+
+This is a simple Ruby on Rails application that illustrates how a REST Web Service might be implemented in Ruby.
+
+Watch the screencast here: http://vimeo.com/25316719
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
