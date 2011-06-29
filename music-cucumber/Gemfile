@@ -10,5 +10,6 @@ gem "cucumber"
 gem 'rack-test'
 gem "capybara-mechanize", :git => "git://github.com/metade/capybara-mechanize.git"
 gem "rspec", :require => "spec"
+gem "faker"
 
 gem "rest-client"
