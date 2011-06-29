@@ -3,6 +3,7 @@ class Collection < ActiveRecord::Base
   validates_presence_of :url_key
   before_validation :generate_url_key
   
+  has_many :clips
   belongs_to :user
   
   protected

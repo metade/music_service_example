@@ -1,6 +1,8 @@
 Music::Application.routes.draw do
-  resources :collections
-
+  resources :collections do
+    resources :clips
+  end
+  
   resources :users do
     resources :collections
   end
