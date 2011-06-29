@@ -6,13 +6,11 @@ Feature: Users
   Background:
     Given I send and accept JSON
   
-  @rails
   Scenario: List users when there are no users
     When I send a GET request for "/users"
     Then the response status should be "200"
     And the JSON response should have 0 "$.users.*"
   
-  @rails
   Scenario: Create a user
     When I send a POST request to "/users" with the following:
       """
@@ -30,7 +28,7 @@ Feature: Users
           }
       }
       """
-    Then the response status should be "201"
+    Then the response status should be "200"
     And show me the response
     And the JSON response should have the following:
       | jsonpath              | value                        |
@@ -42,8 +40,7 @@ Feature: Users
     And the JSON response should have "$.user.artist_gid" as nil
     And the JSON response should have "$.user.featured_position" as nil
     And the JSON response should have "$.user.brand_pid" as nil
-
-  @rails
+  
   Scenario: Create the same user twice
     Given a user exists
     When I send a POST request to "/users" with the following:
@@ -60,8 +57,7 @@ Feature: Users
       When I send a GET request for "/users"
       Then the response status should be "200"
       And the JSON response should have 1 "$.users.*"
-
-  @rails
+  
   Scenario: Get a user
     Given a user exists
     When I send a GET request to "/users/testuser"
@@ -73,7 +69,6 @@ Feature: Users
       | $.user.is_guide     | 0         |
       | $.user.is_superuser | 0         |
   
-  @rails
   Scenario: Update a user
     Given a user exists
     When I send a PUT request to "/users/testuser" with the following:
@@ -98,7 +93,6 @@ Feature: Users
         | $.user.status       | 1         |
         | $.user.brand_pid    | foobar    |
   
-  @rails
   Scenario: Delete a user
     Given a user exists
     When I send a DELETE request to "/users/testuser"

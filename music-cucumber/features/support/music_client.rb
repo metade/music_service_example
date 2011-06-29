@@ -1,23 +1,22 @@
 require 'ostruct'
 require 'rest-client'
-require 'pp'
 
 module Music
   def self.destroy_all_users
     users = Music::User.all.inject({}){ |h,u| h[u.username] ||= u; h }.values
     users.each do |user|
       user.collections.each do |collection|
-      #   collection.clips.each do |clip|
-      #     RestClient.delete "#{Music::HOST}/collections/#{collection.to_param}/clips/#{clip.pid}", :content_type => :json, :accept => :json
-      #   end
+        collection.clips.each do |clip|
+          RestClient.delete "#{Music::HOST}/collections/#{collection.to_param}/clips/#{clip.pid}", :content_type => :json, :accept => :json
+        end
         collection.destroy
       end
-      # user.playlists.each do |playlist|
-      #   playlist.playlists_tracks.each do |track|
-      #     RestClient.delete "#{Music::HOST}/playlists/#{playlist.to_param}/tracks/#{track['id']}", :content_type => :json, :accept => :json
-      #   end
-      #   playlist.destroy
-      # end
+      user.playlists.each do |playlist|
+        playlist.playlists_tracks.each do |track|
+          RestClient.delete "#{Music::HOST}/playlists/#{playlist.to_param}/tracks/#{track['id']}", :content_type => :json, :accept => :json
+        end
+        playlist.destroy
+      end
       user.destroy
     end
   end
@@ -25,9 +24,7 @@ module Music
   class Base < OpenStruct
     def self.all
       response = RestClient.get "#{Music::HOST}/#{collection_name}", :content_type => :json, :accept => :json
-      data = JSON.parse(response.body)
-      return [] unless (data.kind_of? Hash and data[collection_name])
-      data[collection_name].map { |u| self.new(u) }
+      JSON.parse(response.body)[collection_name].map { |u| self.new(u) }
     end
     
     def self.find(what, params={})

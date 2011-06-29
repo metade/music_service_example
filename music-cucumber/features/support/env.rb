@@ -7,10 +7,10 @@ require 'rest-client'
 
 require File.join(File.dirname(__FILE__), 'music_client')
 
-Music::HOST = 'http://localhost:3000'
+Music::HOST = 'http://pal.sandbox.dev.bbc.co.uk:8194/music'
 
 Capybara.run_server = false
-Capybara.app_host = Music::HOST
+Capybara.app_host = 'http://pal.sandbox.dev.bbc.co.uk:8194/music'
 Capybara.default_selector = :css
 Capybara.default_driver = :mechanize
 

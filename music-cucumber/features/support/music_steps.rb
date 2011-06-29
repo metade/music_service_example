@@ -1,3 +1,5 @@
+require 'faker'
+
 Given /^a user exists$/ do
   user = Music::User.create(
     :name => 'Test User',
@@ -6,13 +8,19 @@ Given /^a user exists$/ do
   @user_id = user.username
 end
 
-Given /^a music guide called "([^\"]*)" exists$/ do |name|
+Given /^an? (disabled|active|inactive)? ?music guide called "([^\"]*)" exists$/ do |status,name|
+  status = case status
+    when 'disabled' then 0
+    when 'active' then 1
+    when 'inactive' then 2
+    else 1
+  end
   user = Music::User.create(
     :name => name,
     :username => name.downcase.gsub(/\W/, ''),
-    :status => 1,
+    :status => status,
     :is_guide => 1,
-    :bbcid => 12345)
+    :bbcid => 2345)
   @user_id = user.username
 end
 
@@ -65,7 +73,6 @@ end
 
 Given /^a collection exists$/ do
   collection = Music::Collection.create(
-    :url_key => 'abcd',
     :title => 'Test Collection',
     :short_synopsis => 'A short collection synopsis',
     :medium_synopsis => 'A medium collection synopsis')
@@ -94,6 +101,6 @@ Then /^there should be (\d+) collections/ do |count|
   Music::Collection.all.size.should == count.to_i
 end
 
-Then /^there should be (\d+) clips/ do |count|
-  Music::Clip.all.size.should == count.to_i
+Then /^there should be (\d+) clips?/ do |count|
+  Music::Collection.all.inject(0) { |count, collection| count += collection.clips.size }.should == count.to_i
 end

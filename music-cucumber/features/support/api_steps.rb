@@ -1,5 +1,4 @@
 require 'jsonpath'
-require 'pp'
 
 # TODO: is there a cleaner way of doing this?
 class Capybara::Driver::Mechanize < Capybara::Driver::RackTest
@@ -14,7 +13,7 @@ class Capybara::Driver::Mechanize < Capybara::Driver::RackTest
   
   def put_body(url, body, headers = {})
     if remote?(url)
-      process_remote_request(:put, url, body, { :headers => headers })
+      process_remote_request(:put, url, body, headers)
     else
       register_local_request
       super
@@ -29,24 +28,20 @@ def expand_path(path)
     response = RestClient.get "#{Capybara.app_host}#{collection_path}", :content_type => :json, :accept => :json
     objects = JSON.parse(response.body).values.detect { |o| o.kind_of? Array }
     url_key = objects.last[field.sub(':','')]
-    result = path.sub(field, url_key)
+    path.sub(field, url_key)
   elsif path =~ /(@\w+)/
-    result = path.gsub(/@\w+/) { |i| instance_variable_get(i) }
+    path.gsub(/@\w+/) { |i| instance_variable_get(i) }
   else
-    result = path
+    path
   end
-  # result += ".#{@content_type}" if @content_type
-  result
 end
 
 Given /^I send and accept XML$/ do
-  @content_type = 'xml'
   page.driver.header 'Accept', 'text/xml'
   page.driver.header 'Content-Type', 'text/xml'
 end
 
 Given /^I send and accept JSON$/ do
-  @content_type = 'json'
   page.driver.header 'Accept', 'application/json'
   page.driver.header 'Content-Type', 'application/json'
 end
@@ -56,7 +51,7 @@ When /^I authenticate as the user "([^\"]*)" with the password "([^\"]*)"$/ do |
 end
 
 When /^I send a GET request (?:for|to) "([^\"]*)"$/ do |path|
-  page.driver.get(expand_path(path), {}, { 'Accept' => 'application/json', 'Content-Type' => 'application/json' })
+  page.driver.get expand_path(path)
 end
 
 When /^I send a POST request to "([^\"]*)"$/ do |path|
@@ -64,15 +59,17 @@ When /^I send a POST request to "([^\"]*)"$/ do |path|
 end
 
 When /^I send a POST request to "([^\"]*)" with the following:$/ do |path, body|
-  page.driver.post_body(expand_path(path), body, { 'Accept' => 'application/json', 'Content-Type' => 'application/json' })
+  url = expand_path(path)
+  puts url if ENV['DEBUG']
+  page.driver.post_body url, body
 end
 
 When /^I send a PUT request to "([^\"]*)" with the following:$/ do |path, body|
-  page.driver.put_body(expand_path(path), body, { 'Accept' => 'application/json', 'Content-Type' => 'application/json' })
+  page.driver.put_body expand_path(path), body
 end
 
 When /^I send a DELETE request to "([^\"]*)"$/ do |path|
-  page.driver.delete(expand_path(path), {}, :headers => { 'Accept' => 'application/json', 'Content-Type' => 'application/json' })
+  page.driver.delete expand_path(path)
 end
 
 Then /^show me the response$/ do
