@@ -11,12 +11,12 @@ module Music
         end
         collection.destroy
       end
-      user.playlists.each do |playlist|
-        playlist.playlists_tracks.each do |track|
-          RestClient.delete "#{Music::HOST}/playlists/#{playlist.to_param}/tracks/#{track['id']}", :content_type => :json, :accept => :json
-        end
-        playlist.destroy
-      end
+      # user.playlists.each do |playlist|
+      #   playlist.playlists_tracks.each do |track|
+      #     RestClient.delete "#{Music::HOST}/playlists/#{playlist.to_param}/tracks/#{track['id']}", :content_type => :json, :accept => :json
+      #   end
+      #   playlist.destroy
+      # end
       user.destroy
     end
   end

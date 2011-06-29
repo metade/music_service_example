@@ -21,7 +21,7 @@ Feature: Collections
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And show me the response
     And the JSON response should have the following:
       | jsonpath                  | value                        |
@@ -34,7 +34,7 @@ Feature: Collections
     And the JSON response should have the following:
       | jsonpath                   | value                      |
       | $.collection.title         | Test Collection            |
-
+  
   Scenario: Update a collection
     Given a collection exists
     When I send a PUT request to "/collections/:url_key" with the following:
@@ -62,7 +62,7 @@ Feature: Collections
       | $.collection.has_image       | 1                                       |
       | $.collection.use_pips        | 1                                       |
       | $.collection.url             | http://test                             |
-      | $.collection.promoted_at     | 2011-05-25T12:31:25+0100                |
+      | $.collection.promoted_at     | 2011-05-25T11:31:25Z                    |
   
   Scenario: Update a collection's owner
     Given a collection exists
