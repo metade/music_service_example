@@ -13,7 +13,7 @@ Feature: Collection Clips
     Then the response status should be "200"
     And show me the response
     And the JSON response should have 0 "$.clips"
-
+  
   Scenario: Create a collection clip
     When I send a POST request to "/collections/@collection_id/clips" with the following:
       """
@@ -24,14 +24,13 @@ Feature: Collection Clips
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And show me the response
     And the JSON response should have the following:
       | jsonpath                  | value                        |
       | $.clip.title              | Test Clip                    |
     And there should be 1 clip
   
-  @current
   Scenario: Add the same clip to 2 collections
     When I send a POST request to "/collections/@collection_id/clips" with the following:
       """
@@ -57,11 +56,11 @@ Feature: Collection Clips
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And the JSON response should have the following:
       | jsonpath                  | value                        |
       | $.clip.title              | Test Clip                    |
-    And there should be 1 clip
+    And there should be 2 clips
     
   Scenario: Update a collection clip
     Given a clip exists

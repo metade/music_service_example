@@ -13,6 +13,8 @@
 ActiveRecord::Schema.define(:version => 20110629191917) do
 
   create_table "clips", :force => true do |t|
+    t.string   "pid"
+    t.string   "title"
     t.integer  "collection_id"
     t.datetime "created_at"
     t.datetime "updated_at"

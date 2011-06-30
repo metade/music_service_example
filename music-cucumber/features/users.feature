@@ -28,7 +28,7 @@ Feature: Users
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And show me the response
     And the JSON response should have the following:
       | jsonpath              | value                        |
