@@ -26,9 +26,12 @@ class CollectionsController < ApplicationController
   
   def update
     @collection = Collection.find_by_url_key(params[:id])
+    if params[:collection][:user]
+      params[:collection][:user] = User.find_by_username!(params[:collection][:user][:username])
+    end
     @collection.update_attributes(params[:collection])
     @collection.save
-    respond_with({ :collection => @collection })
+    respond_with({ :collection => @collection }, :include => :user)
   end
   
   def destroy
