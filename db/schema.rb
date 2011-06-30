@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20110630080653) do
     t.string   "short_synopsis"
     t.string   "medium_synopsis"
     t.string   "url"
+    t.integer  "status"
     t.integer  "user_id"
     t.integer  "featured_position"
     t.integer  "use_pips"

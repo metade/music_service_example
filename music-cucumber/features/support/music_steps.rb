@@ -31,8 +31,8 @@ Given /^(\d+) music guides exist$/ do |i|
       :bbcid => rand(10000).to_i,
       :is_guide => 1,
       :username => Faker::Internet.user_name.gsub(/\W+/, ''),
-      :shortSynopsis => Faker::Lorem.paragraph(1),
-      :mediumSynopsis => Faker::Lorem.paragraphs(3).join)
+      :short_synopsis => Faker::Lorem.paragraph(1),
+      :medium_synopsis => Faker::Lorem.paragraphs(3).join)
   end
 end
 
@@ -45,8 +45,8 @@ Given /^(\d+) featured music guides exist$/ do |i|
       :is_guide => 1,
       :featured_position => i,
       :username => Faker::Internet.user_name.gsub(/\W+/, ''),
-      :shortSynopsis => Faker::Lorem.paragraph(1),
-      :mediumSynopsis => Faker::Lorem.paragraphs(3).join)
+      :short_synopsis => Faker::Lorem.paragraph(1),
+      :medium_synopsis => Faker::Lorem.paragraphs(3).join)
   end
 end
 

@@ -9,6 +9,7 @@ class CreateCollections < ActiveRecord::Migration
       t.string :medium_synopsis
       t.string :url
       
+      t.integer :status
       t.integer :user_id
       t.integer :featured_position
       t.integer :use_pips  # should be boolean
