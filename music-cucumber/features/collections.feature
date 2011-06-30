@@ -64,6 +64,7 @@ Feature: Collections
       | $.collection.url             | http://test                             |
       | $.collection.promoted_at     | 2011-05-25T11:31:25Z                    |
   
+  @current
   Scenario: Update a collection's owner
     Given a collection exists
     And a music guide called "Zane Lowe" exists
@@ -78,6 +79,7 @@ Feature: Collections
       }
       """
     Then the response status should be "200"
+    And show me the response
     And the JSON response should have the following:
       | jsonpath                      | value     |
       | $.collection.user.username    | zanelowe  |
