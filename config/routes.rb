@@ -1,4 +1,11 @@
 Music::Application.routes.draw do
+  resources :playlists do
+    collection do
+      get 'draft'
+      get 'published'
+    end
+  end
+  
   resources :collections do
     collection do
       get 'featured'
@@ -11,6 +18,7 @@ Music::Application.routes.draw do
       get 'featured'
     end
     resources :collections
+    resources :playlists
   end
 
   # The priority is based upon order of creation:

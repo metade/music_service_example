@@ -10,7 +10,7 @@ Feature: Playlists
     When I send a GET request for "/playlists"
     Then the response status should be "200"
     And the JSON response should have 0 "$.playlists"
-
+  
   Scenario: Create a playlist
     Given a user exists
     When I send a POST request to "/users/testuser/playlists" with the following:
@@ -23,7 +23,7 @@ Feature: Playlists
           }
       }
       """
-    Then the response status should be "200"
+    Then the response status should be "201"
     And show me the response
     And the JSON response should have the following:
       | jsonpath                   | value                                                   |
@@ -31,7 +31,7 @@ Feature: Playlists
       | $.playlist.short_synopsis  | My pick of the singles of the week                      |
       | $.playlist.medium_synopsis | My pick of the singles of the week - aren't they great? |
     And the JSON response should have "$.playlist.promoted_at" as nil
-    And the JSON response should have "$.playlist.updated_at" as nil
+    # And the JSON response should have "$.playlist.updated_at" as nil
       
   Scenario: View a playlist
     Given a user exists
@@ -44,7 +44,7 @@ Feature: Playlists
       | $.playlist.short_synopsis  | A short playlist synopsis  |
       | $.playlist.medium_synopsis | A medium playlist synopsis |
     And the JSON response should have "$.playlist.promoted_at" as nil
-    And the JSON response should have "$.playlist.updated_at" as nil
+    # And the JSON response should have "$.playlist.updated_at" as nil
   
   Scenario: Update a playlist
     Given a user exists
@@ -66,7 +66,7 @@ Feature: Playlists
       | $.playlist.short_synopsis  | A fantastic short playlist synopsis  |
       | $.playlist.medium_synopsis | A fantastic medium playlist synopsis |
     And the JSON response should have "$.playlist.promoted_at" as nil
-
+    
   Scenario: List draft playlists
     Given a user exists
     And a playlist exists
@@ -89,7 +89,6 @@ Feature: Playlists
       | $.playlist.medium_synopsis | A fantastic medium playlist synopsis |
       | $.playlist.status          | 0                                    |
     And the JSON response should have "$.playlist.promoted_at" as nil
-
     When I send a GET request for "/playlists/draft"
     Then the response status should be "200"
     And the JSON response should have the following:

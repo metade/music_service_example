@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110629191917) do
+ActiveRecord::Schema.define(:version => 20110630080653) do
 
   create_table "clips", :force => true do |t|
     t.string   "pid"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(:version => 20110629191917) do
     t.integer  "featured_position"
     t.integer  "use_pips"
     t.integer  "has_image"
+    t.datetime "promoted_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "playlists", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "status",          :default => 0
+    t.string   "title"
+    t.string   "medium_synopsis"
+    t.string   "url_key"
+    t.string   "short_synopsis"
     t.datetime "promoted_at"
     t.datetime "created_at"
     t.datetime "updated_at"

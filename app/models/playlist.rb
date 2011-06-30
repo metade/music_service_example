@@ -1,9 +1,9 @@
-class Collection < ActiveRecord::Base
-  validates_presence_of :user_id
+class Playlist < ActiveRecord::Base
   validates_presence_of :url_key
+  validates_presence_of :user_id
+  validates_uniqueness_of :url_key
   before_validation :generate_url_key
   
-  has_many :clips
   belongs_to :user
   
   def to_param
