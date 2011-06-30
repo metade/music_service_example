@@ -1,9 +1,15 @@
 Music::Application.routes.draw do
   resources :collections do
+    collection do
+      get 'featured'
+    end
     resources :clips
   end
   
   resources :users do
+    collection do
+      get 'featured'
+    end
     resources :collections
   end
 

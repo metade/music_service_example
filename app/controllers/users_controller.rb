@@ -6,6 +6,11 @@ class UsersController < ApplicationController
     respond_with({ :users => @users }, :include => :collections)
   end
   
+  def featured
+    @users = User.all(:conditions => ['featured_position >= 0'], :order => 'featured_position')
+    respond_with({:users => @users})
+  end
+  
   def show
     @user = User.find_by_username(params[:id], :include => :collections)
     respond_with({ :user => @user }, :include => :collections)

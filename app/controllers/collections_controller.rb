@@ -7,6 +7,11 @@ class CollectionsController < ApplicationController
     respond_with(:collections => @collections)
   end
   
+  def featured
+    @collections = Collection.all(:conditions => ['featured_position >= 0'], :order => 'featured_position')
+    respond_with({:collections => @collections})
+  end
+  
   def show
     @collection = Collection.find_by_url_key(params[:id])
     respond_with({ :collection => @collection })
